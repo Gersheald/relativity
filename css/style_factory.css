@@ -1,0 +1,662 @@
+
+* { /*нам нужно, чтобы размер всех элементов был с учетом паддинга и рамок*/
+    box-sizing: border-box;
+}
+
+html { /*здесь стили для всего документа*/
+    overflow-x: hidden;
+    /* height: 100%;  */
+    
+}
+
+html,
+body { /* табличный способ фиксирования подвала - таблица будет подстраивать свои размеры под ее содержание 1 */
+    /* overflow-x: hidden; */
+    /* height: 100%; *//* задаем высоту, чтобы документ занимал по высоте весь экран */
+}
+
+a { /*здесь запишем стили для всех ссылок на сайте*/
+    text-decoration: none; /*уберем у них нижнее подчеркивание, по умолчанию оно нам не надо*/
+}
+
+
+ul {
+    
+    /* margin-top: 0; */
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+    
+}
+
+.none_markers {
+    list-style: none;
+}
+
+.margin_markers {
+    margin: 0 0 0 20px;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 121px;
+    margin: 0 0 0 0;
+    /* padding: 0 0 0 0; */
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+    
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    margin: 0 0 0 0;
+    color: #000000;
+    text-transform: uppercase;
+}
+  
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    
+    /* identical to box height */
+    margin: 0 0 0 0;
+    text-transform: uppercase;
+    color: #1400FF;
+    
+    
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 30px 0 0 0;
+    color: #000000;
+}
+
+li {
+    
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+}
+
+/* ------------------------body------------------------------------ */
+body {
+    height: 100%;
+}
+.body {
+    /* position: relative; */
+    /*width: 1920px;
+    height: 3360px;*/
+    display: flex; /*располагаем все содержимое в ряд*/
+    flex-direction: column; /*и порядок в колонку*/
+    justify-content: space-between; /*затем задаем отступ между элементами body. Это св-во и два предыдущих нужны, чтобы "прибить"подвал к низу сайта*/
+    /* background: black; */
+ /*   border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;*/
+    min-height: 100%; /*высота на весь экран*/
+    padding: 0; /*обнуляем внутренние отступы*/
+    width: 100%; /*задаем ширину содержимого*/
+    min-width: 340px; /*задаем минимальную ширину, если ширина экрана будет меньше, то контент не будет "ехать", а начнет пропорционально уменьшаться*/
+    margin: 0 auto; /*обнуляем внешние отступы сверху и снизу и центрируем все содержимое*/
+    background-color: #fff; /* цвет фона для всей страницы*/
+    max-width: 1920px;/*укажем максимальную ширину*/
+    margin: 0 auto 0 auto; /*отцентрируем и добавим отступ до следующего блока*/
+}
+
+/* -------------------------content-------------------------------- */
+.content {
+    flex: 1 0 auto;
+    /* padding: 1rem; */
+    /* background: #3d0707; */
+}
+
+/* -----------------------------------header--------------------------- */
+.header{
+    /*width: 100%;
+    height: 900px;
+    background-color:  #F4F4F4;  
+    margin-bottom: 140px;   
+    position: relative;
+   */
+
+   
+    /*width: 1920px;
+    height: 3360px;*/
+
+    /*background: #E5E5E5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;*/
+    position: relative;
+    width: 100%;
+    /*height: 100px;*/
+    left: 0px;
+    top: 0px;
+    background: #000000;
+    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+    
+}
+
+.header__menu {
+    display: flex;
+    /* line-height: 100px; */
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.header__logo {
+    /*position: relative;*/
+    /* background-color: gray; */
+    /* margin-left: 240px; */
+    /* padding-top: 25px; */
+    /*width: 330px;*/
+    display: flex;
+    align-items: center;
+}
+
+.header__menu-list {
+    /* text-decoration: none; */
+    /* position: relative; */
+    /* background: blue; */
+    /* line-height: 100px; */
+    /* left: 336px; */
+    /* float: left; */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* text-align: center; */
+    /*padding-left: 50px;*/
+    /*height: 100px;*/
+    
+}
+
+
+.header__menu-item a,
+.header__menu-item a:visited { /*стили для ссылок в шапке, здесь запишем только свойства шрифта*/
+    /* font-weight: 500;  */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    font-style: normal;
+    /* line-height: 20px; */
+    text-transform: uppercase;
+    color: #FFFFFF;  
+}
+
+.header__language-list {
+    /* text-decoration: none; */
+    /* position: relative; */
+    /* line-height: 100px; */
+    /* left: 336px; */
+    /* float: left; */
+    /* text-align: center; */
+    /*padding-left: 50px;*/
+    /*height: 100px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: blue; */
+    width: 200px;
+    gap: 10px;
+    
+}
+
+.header__menu-item a:hover, /*здесь пропишем состояния для ссылок в шапке*/
+.header__menu-item a:focus,
+.header__menu-item a:active {
+    color: #888888; /*ссылка поменяет цвет шрифта*/
+}
+
+.header__language-item a,
+.header__language-item a:visited { /*стили для ссылок в шапке, здесь запишем только свойства шрифта*/
+    /* font-weight: 500;  */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    font-style: normal;
+    /* line-height: 20px; */
+    text-transform: uppercase;
+    color: #FFFFFF;  
+}
+
+.header__language-item a:hover, /*здесь пропишем состояния для ссылок в шапке*/
+.header__language-item a:focus,
+.header__language-item a:active {
+    color: #888888; /*ссылка поменяет цвет шрифта*/
+}
+
+/* ----------------------/header------------------------------------- */
+
+/* ------------------------main-------------------------------------- */
+.main { /* фиксирование подвала 3 */
+    
+    /* padding-bottom: 100px; */
+    /* background: #000000; */
+
+}
+
+.main{
+    /*width: 100%;
+    height: 900px;
+    background-color:  #F4F4F4;  
+    margin-bottom: 140px;   
+    position: relative;
+   */
+
+   
+    /*width: 1920px;
+    height: 3360px;*/
+
+    /*background: #E5E5E5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;*/
+
+    /* display: table-row;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: 0px; */
+    /* background: #5e5e5e; */
+
+    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+    
+}
+
+
+.main__screen-image {
+    /* position: relative; */
+    /*max-width: 145px;*/
+    /* width: 100%; */
+
+    /* position: relative; */
+    /* display: flex;
+    align-items: center; */
+    /*line-height: 150px;*/
+    /*max-height: 145px;*/
+    /*width: 291px;
+    height: 72px;*/
+    /* margin: 0 auto; */
+    /* display: block; */
+    /* display: none; */
+    /* z-index: 3; */
+}
+
+.main__screen-info{
+    /* margin: 0 -1920px;
+    min-width: 1920px; */
+    position: absolute;
+    width: 1920px;
+    height: 900px;
+    background-color: #0000007c;
+
+    /* z-index: 5; */
+    /* justify-content: center */
+    /* align-items: center; */
+}
+
+.screen-info__info-block {
+    display: flex;  
+    flex-direction: column;
+    /* align-items: center; */
+    /* width: 1400px; */
+    height: 900px;
+    /* width: 50px; */
+    /* background-color: #7571a5; */
+    justify-content: end; 
+    
+}
+
+.info-block__text {
+    /* font-family: sans-serif; */
+    margin: 0 0 100px 100px;
+    color: #FFFFFF;  
+}
+.info-block__button {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    
+}
+
+.button {
+    /* color: #FFFFFF; */
+    /* display: flex;
+    column-gap: 10px;
+    width: fit-content;
+    margin: 0 auto; */
+}
+
+.button-white, 
+.button-white:visited {
+    width: 250px; /*ширина*/
+    height: 60px; /*высота*/
+    background: #ffffff; /*цвет фона*/
+    border-radius: 10px; /*скругление кнопки*/
+    font-weight: 500; /*жирность шрифта надписи в кнопке*/
+    font-size: 20px; /*размер шрифта надписи в кнопке*/
+    /* border: solid 1px white; */
+    color: #000000; /*цвет надписи в кнопке*/
+    line-height: 19px; /*высота строки надписи в кнопке*/
+    text-align: center; /*сделаем надпись по центру по горизонтали*/
+    text-transform: uppercase; /*регистр текста, нам нужны заглавные буквы*/
+    margin: 24px 0 0 0; /*внешний нижний отступ*/
+    padding: 20px; /*внутренний отступ общий для всех сторон*/
+    display: block; /*в коде кнопки записаны строчными элементами - ссылками, поэтому сделаем их блочными*/
+}
+
+.button-white:hover, /*стили для кнопки по наведению*/
+.button-white:focus, /*стили для кнопки,которые применятся при переходе к элементу через клавишу tab*/
+.button-white:active { /*стили для кнопки по нажатию*/
+    color: #000000;
+    background-color: rgb(175, 175, 175); /*у кнопки поменяется фон*/
+}
+
+.button-transparent, 
+.button-transparent:visited {
+    width: 250px; /*ширина*/
+    height: 60px; /*высота*/
+    background: #00000050; /*цвет фона*/
+    border-radius: 10px; /*скругление кнопки*/
+    font-weight: 500; /*жирность шрифта надписи в кнопке*/
+    font-size: 20px; /*размер шрифта надписи в кнопке*/
+    border: solid 1px white;
+    color: #FFFFFF; /*цвет надписи в кнопке*/
+    line-height: 19px; /*высота строки надписи в кнопке*/
+    text-align: center; /*сделаем надпись по центру по горизонтали*/
+    text-transform: uppercase; /*регистр текста, нам нужны заглавные буквы*/
+    margin: 24px 0 0 0; /*внешний нижний отступ*/
+    padding: 20px; /*внутренний отступ общий для всех сторон*/
+    display: block; /*в коде кнопки записаны строчными элементами - ссылками, поэтому сделаем их блочными*/
+}
+
+.button-transparent:hover, /*стили для кнопки по наведению*/
+.button-transparent:focus, /*стили для кнопки,которые применятся при переходе к элементу через клавишу tab*/
+.button-transparent:active { /*стили для кнопки по нажатию*/
+    color: #000000;
+    background-color: #FFFFFF; /*у кнопки поменяется фон*/
+}
+
+.main__list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    /* gap: 50px; */
+    row-gap: 165px;
+    padding: 165px;
+    
+    justify-content: center; 
+    /*затем задаем отступ между элементами body. Это св-во и два предыдущих нужны, чтобы "прибить"подвал к низу сайта*/
+    
+    
+
+}
+
+.main-list-ru {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* column-gap: 40px; */
+    row-gap: 400px;
+    /* padding: 220px; */
+    /* justify-content: center;  */
+
+}
+
+.main__list-item {
+    /* float: left; */
+    display: flex;
+    width: 700px;
+    height: 700px;
+    /* background-color: aquamarine; */
+    align-items: center;
+    
+}
+
+
+
+.main__list-image-position {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center 
+    /* display: table-cell; */
+    /* vertical-align: middle  */
+}
+
+.main__list-text {
+    display: flex;
+    align-items: center;
+    /* justify-content: center  */
+    /* text-align: center */
+    width: 700px;
+    height: 700px;
+    /* background-color: #888888; */
+    /* vertical-align: middle; */
+    /* display: none; */
+
+}
+
+.list-text__difference-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.list-text__difference-text {
+    text-align: center;
+    margin: 0 0 0 0;
+    
+}
+
+.list-text__difference-image {
+    margin: 40px 0 40px 0;
+}
+
+
+/* ---------------------------/main-------------------------------- */
+/* ---------------------------/content----------------------------- */
+
+/* ----------------------------footer------------------------------ */
+.footer {
+    display: flex;
+    flex: 0 0 auto;
+    /* padding: 1rem; */
+    background-color: black;
+    /* margin-top: -100px; */
+    height: 400px;
+
+    
+    justify-content: space-evenly;
+    width: 100%;
+    /* height: 400px; */
+    left: 0px;
+    top: 0px;
+    background: #000000;
+    
+    /* background-color: #000000; */
+}
+
+.footer{
+    /*width: 100%;
+    height: 900px;
+    background-color:  #F4F4F4;  
+    margin-bottom: 140px;   
+    position: relative;*/
+    /* width: 1920px;
+    height: 3360px; */
+    /*background: #E5E5E5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;*/
+    /* position: relative; */
+    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+    
+}
+
+.footer__logo {
+    /*position: relative;*/
+    /* background-color: gray; */
+    /* margin-left: 240px; */
+    /* padding-top: 25px; */
+    /*width: 330px;*/
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer__menu {
+    display: flex;
+    /* line-height: 100px; */
+    /* justify-content: space-evenly; */
+    /* line-height: 50px; */
+    /* align-items: center; */
+    /* margin: 0 0 0 0; */
+    /* padding: 0 0 0 0; */
+    align-items: center;
+}
+
+.footer__menu-list {
+    /* text-decoration: none; */
+    /* position: relative; */
+    /* background: blue; */
+    /* line-height: 100px; */
+    /* width: 250px; */
+    /* left: 336px; */
+    /* float: left; */
+    /* display: flex; */
+    /* gap: 20px; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /*padding-left: 50px;*/
+    /*height: 100px;*/
+    
+}
+
+.footer__menu-item a,
+.footer__menu-item a:visited { /*стили для ссылок в шапке, здесь запишем только свойства шрифта*/
+    /* font-weight: 500;  */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    font-style: normal;
+    /* line-height: 20px; */
+    text-transform: uppercase;
+    color: #C4C4C4;  
+}
+
+.footer__menu-item a:hover, /*здесь пропишем состояния для ссылок в шапке*/
+.footer__menu-item a:focus,
+.footer__menu-item a:active {
+    color: #888888; /*ссылка поменяет цвет шрифта*/
+}
+
+.footer__socials-motto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #af0000; */
+}
+
+.footer__socials-list {
+    display: flex;
+    align-items: center;
+    /* align-items: center; */
+    /* flex-direction: row; */
+    /* float:left */
+    /* align-items: center; */
+    justify-content: space-around;
+    gap: 30px;
+    
+}
+
+.footer__socials-item {
+    /* display: flex; */
+    /* float: left; */
+}
+
+.footer__motto-list {
+    /* position: relative; */
+    /* display: flex;
+    float: left;  */
+    /* align-self: flex-start; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    /* flex-wrap: nowrap; */
+    /* float: left; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    width: 300px;
+    text-align: center;
+    /* background-color: aqua; */
+    padding: 0 10px 0 10px;
+    /* margin: 10px; */
+    /* color: #FFFFFF;   */
+
+}
+
+.footer__motto-item {
+    
+    /* display: flex;
+    float: left; */
+    /* font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px; */
+    /* text-align: center; */
+    /* color: #FFFFFF; */
+
+}
+
+.footer__motto-item a,
+.footer__motto-item a:visited { /*стили для ссылок в шапке, здесь запишем только свойства шрифта*/
+    /* font-weight: 500;  */
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    font-style: normal;
+    /* line-height: 20px; */
+    /* text-transform: uppercase; */
+    color: #C4C4C4;  
+}
+
+.footer__motto-item a:hover, /*здесь пропишем состояния для ссылок в шапке*/
+.footer__motto-item a:focus,
+.footer__motto-item a:active {
+    color: #888888; /*ссылка поменяет цвет шрифта*/
+}
+
+/* ---------------------------/footer-------------------------------- */
+/* ---------------------------/body---------------------------------- */
+
+
+
+
+
+
+
+
