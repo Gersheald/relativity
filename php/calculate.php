@@ -12,7 +12,7 @@
     <body>
         <div class="conteiner">
             <h1>
-                register
+                calculate
             </h1>
             <form action="" method="post">
                 <input type="text" class="form-control" name="payload type" id="payload type" placeholder="enter your payload type">

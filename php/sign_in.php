@@ -15,7 +15,7 @@
                 sign in
             </h1>
             <form action="" method="post">
-                <input type="text" class="form-control" name="email" id="email" placeholder="enter your email">
+                <input type="text" class="form-control" name="login" id="login" placeholder="enter your login">
                 <input type="text" class="form-control" name="password" id="password" placeholder="enter your password">
                 <button>
                     sign in
