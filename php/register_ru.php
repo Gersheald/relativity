@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--метатег для масштабирования сайта при изменении ширины экрана. назначает, что размер экрана сайта будет соответствовать реальным размерам устройства, у соврмеменных мобильников реальная матрица телефонов сильно меньше 1920 px-->
-    	<title>registration form</title>
+    	<title>Регистрационная форма</title>
     	<link rel="icon" href="favicon.ico"> <!--здесь подключается фавиконка-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/style_home.css">
@@ -15,7 +15,7 @@
         <div class="conteiner mt-4">
         
             <h1>
-                register
+                Регистрация
             </h1>
             
 
@@ -50,30 +50,32 @@
                 $query_5 = "INSERT INTO `price`(`price`) VALUES ('$calculate_2_price')";
                 $query_run_5 = mysqli_query($connection,$query_5);
                 
+                
 
             }
             
             
         ?>
-            <form action="../index.php" method="post">
-                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="please enter your first name">
-                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="please enter your last name">
-                <input type="text" class="form-control" name="company" id="company" placeholder="please enter your company name">
-                <input type="text" class="form-control" name="job_title" id="job_title" placeholder="please enter your job title">
-                <input type="text" class="form-control" name="email" id="email" placeholder="Please enter your email">
-                <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="Please enter your phone number">
+
+
+            <form action="../html/index_home_ru.php" method="post">
+                <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Пожалуйста введите Ваше имя">
+                <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Пожалуйста введите Вашу фамилию">
+                <input type="text" class="form-control" name="company" id="company" placeholder="Пожалуйста введите Ваше название вашей компании">
+                <input type="text" class="form-control" name="job_title" id="job_title" placeholder="Пожалуйста введите Вашу должность">
+                <input type="text" class="form-control" name="email" id="email" placeholder="Пожалуйста введите Ваш адрес электронной почты">
+                <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="Пожалйста введите Ваш номер телефона">
                 <!-- <input type="text" class="form-control" name="register_login" id="register_login" placeholder="enter your login">
                 <input type="password" class="form-control" name="register_password" id="register_password" placeholder="enter your password"> -->
                 <button type="submit" class="btn btn-success" name="register">
-                    register
+                    Зарегестрироваться
                 </button>
-                <a class="btn btn-primary" href="../index.php" role="button">go back</a>
+                <a class="btn btn-primary" href="../html/index_home_ru.php" role="button">Назад</a>
             </form>
             <p>
                 or 
             </p>
-            <a class="btn btn-primary" href="./sign_in.php" role="button">sign in</a>
-           
+            <a class="btn btn-primary" href="./sign_in.php" role="button">Войти</a>
         </div>
     </body>
 </html>  

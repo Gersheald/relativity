@@ -12,18 +12,18 @@
     <body>
         <div class="conteiner mt-4">
             <h1>
-                calculate
+                Рассчёт стоимости
             </h1>
             <form action="check.php" method="post">
-                <input type="text" class="form-control" name="calculate_payload_type" id="calculate_payload_type" placeholder="enter your payload type">
-                <input type="text" class="form-control" name="calculate_payload_weight" id="calculate_payload_weight" placeholder="enter your payload weight">
-                <input type="text" class="form-control" name="calculate_orbit_type" id="calculate_orbit_type" placeholder="enter orbit type">
-                <input type="text" class="form-control" name="calculate_launch_date" id="calculate_launch_date" placeholder="select launch date">
+                <input type="text" class="form-control" name="calculate_payload_type" id="calculate_payload_type" placeholder="введите тип груза">
+                <input type="text" class="form-control" name="calculate_payload_weight" id="calculate_payload_weight" placeholder="введите вес груза">
+                <input type="text" class="form-control" name="calculate_orbit_type" id="calculate_orbit_type" placeholder="введите тип орбиты">
+                <input type="text" class="form-control" name="calculate_launch_date" id="calculate_launch_date" placeholder="выберете дату запуска">
                 <input type="text" class="form-control" name="calculate_order_total" id="calculate_order_total" placeholder="">
                 <button class="btn btn-success" type="submit">
-                    order now
+                    заказать
                 </button>
-                <a class="btn btn-primary" href="../index.php" role="button">go back</a>
+                <a class="btn btn-primary" href="../html/index_home_ru.html" role="button">вернуться на главную</a>
             </form>
             <!-- <button class="btn btn-secondary"  href="../index.html">
                 go back

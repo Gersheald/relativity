@@ -12,21 +12,21 @@
     <body>
         <div class="conteiner mt-4">
             <h1>
-                newsletter
+                Рассылка
             </h1>
             <p>
-                subscribe us to get media and more information about Relativity events
+                Подпишитесь на нас, чтобы получать медиа файлы и больше информации про события Relativity
             </p>
-            <form action="../index.php" method="post">
-                <input type="text" class="form-control" name="email" id="email" placeholder="enter your email">
+            <form action="../html/index_home_ru.php" method="post">
+                <input type="text" class="form-control" name="email" id="email" placeholder="введите email">
                 <button class="btn btn-success" type="submit" name="subscribe">
-                    subscribe
+                    подписаться
                 </button>
                 <button class="btn btn-danger" type="" name="">
-                    unsubscribe
+                    отписаться
                 </button>
             </form>
-            <a class="btn btn-primary" href="../index.php" role="button">go back</a>
+            <a class="btn btn-primary" href="../html/index_home_ru.php" role="button">вернуться на главную</a>
         </div>
     </body>
 </html>  

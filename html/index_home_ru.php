@@ -4,43 +4,42 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--метатег для масштабирования сайта при изменении ширины экрана. назначает, что размер экрана сайта будет соответствовать реальным размерам устройства, у соврмеменных мобильников реальная матрица телефонов сильно меньше 1920 px-->
-    	<title>Home</title>
+    	<title>Дом</title>
     	<link rel="icon" href="favicon.ico"> <!--здесь подключается фавиконка-->
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
-		<link rel="stylesheet" href="./css/style_home.css">
+		<link rel="stylesheet" href="../css/style_home.css">
 	</head>
 	<body class="home_body">
         <div class="content">
 			<header class="home__header">
                 <nav class="header__menu">
                     <div class="header__logo"> 
-                        <a href="index.html">
-                            <img src="./images/Relativity_White_RGB_900px.png" width = "200px" alt="Relativity Space Logo">
+                        <a href="../html/index_home_ru.php">
+                            <img src="../images/Relativity_White_RGB_900px.png" width = "200px" alt="Relativity Space Logo">
                         </a>
                     </div>
                     <ul class="header__menu-list none_markers"> <!--открывающий тег списка десктопного меню. Добавим этому элементу классы, по которым будем отключать на мобильной и планшетной ширине-->
                         <li class="header__menu-item">
-                            <a href="./html/index_rockets_en.html">Rockets</a>
+                            <a href="../html/index_rockets_ru.html">Ракеты</a>
                         </li> 
                         <li class="header__menu-item">
-                            <a href="./html/index_engines_en.html">Engines</a>
+                            <a href="../html/index_engines_ru.html">Двигатели</a>
                         </li> 
                         <li class="header__menu-item">
-                            <a href="./html/index_factory_en.html">Factory</a>
+                            <a href="../html/index_factory_ru.html">Производство</a>
                         </li> 
                         <li class="header__menu-item">
-                            <a href="./html/index_infrastructure_en.html">Infrastructure</a>
+                            <a href="../html/index_infrastructure_ru.html">Инфраструктура</a>
                         </li> 
                         <li class="header__menu-item"> <!--пункт списка-->
-                            <a href="./html/index_projects_en.html">Projects</a> <!--ссылка, пустая, поэтому ставим "#". Также здесь и дальше по проекту будем в текстах после предлогов, между цифрами и связанными с ними словами и в других местах, в которых текст не должен переноситься, ставить вместо пробела символ неразрывного пробела - "&nbsp;"-->
+                            <a href="../html/index_projects_ru.html">Проекты</a> <!--ссылка, пустая, поэтому ставим "#". Также здесь и дальше по проекту будем в текстах после предлогов, между цифрами и связанными с ними словами и в других местах, в которых текст не должен переноситься, ставить вместо пробела символ неразрывного пробела - "&nbsp;"-->
                         </li> 
                     </ul>
                     <ul class="header__language-list none_markers"> <!--открывающий тег списка десктопного меню. Добавим этому элементу классы, по которым будем отключать на мобильной и планшетной ширине-->
                         <li class="header__language-item "> <!--пункт списка-->
-                            <a href="./html/index_home_en.html">EN</a> <!--ссылка, пустая, поэтому ставим "#". Также здесь и дальше по проекту будем в текстах после предлогов, между цифрами и связанными с ними словами и в других местах, в которых текст не должен переноситься, ставить вместо пробела символ неразрывного пробела - "&nbsp;"-->
+                            <a href="../index.php">EN</a> <!--ссылка, пустая, поэтому ставим "#". Также здесь и дальше по проекту будем в текстах после предлогов, между цифрами и связанными с ними словами и в других местах, в которых текст не должен переноситься, ставить вместо пробела символ неразрывного пробела - "&nbsp;"-->
                         </li> 
                         <li class="header__language-item">
-                            <a href="./html/index_home_ru.html">RU</a>
+                            <a href="../html/index_home_ru.php">RU</a>
                         </li> 
                     </ul>
                 </nav>
@@ -50,60 +49,55 @@
                     <div class="main__screen-info">
                         <div class="screen-info__info-block">
                             <h1 class="info-block__text">
-                                TERRAN 1 
+                                терран 1
                             </h1> <!--абзац с информацией о приюте. Тоже добавим модификатор-->
                             <h1 class="info-block__text">
-                                FIRST LAUNCH
-                            </h1> <!--абзац с информацией о приюте. Тоже добавим модификатор-->
+                                запустите свой аппарат
+                            </h1>
                             <div class="info-block__button"> <!--оборачиваем кнопки в обертку, чтобы расположить их в ряд-->
-                                <a href="./php/questionnaire.php" class="button-white">
-                                    calculate price 
+                                <a href="../php/calculate_2_ru.php " class="button-white">
+                                    узнать стоимость
                                 </a> <!--кнопка. В коде пишем ссылкой, т.к. скорее всего это будет переход на другую страницу, которой пока нет в макете.-->
-                                <a href="https://www.youtube.com/watch?v=bzA0lIwh19c" class="button-transparent">
-                                    watch launch
+                                <a href="../php/newsletter_ru.php" class="button-transparent">
+                                    получить медиа
                                 </a> 
-                                
-                                <!-- <a href="https://www.youtube.com/watch?v=bzA0lIwh19c " class="button-white">
-                                    watch launch 
-                                </a> 
-                                <a href="https://twitter.com/relativityspace/status/1646151884766429188?s=20" class="button-transparent">
-                                    about  
-                                </a>  -->
                             </div>
                         </div>
                     </div>
                     <div class="main__screen-image">
                         <a > 
-                            <img src="./images/home/home__image-1.jpg" alt="home__image-1" >
+                            <img src="../images/home/home__image-1.jpg" alt="home__image-1" >
                         </a>
                     </div>
                 </div>
-                <ul class="main__list none_markers"> <!--открывающий тег списка десктопного меню. Добавим этому элементу классы, по которым будем отключать на мобильной и планшетной ширине-->
+                <ul class="main__list main-list-ru none_markers"> <!--открывающий тег списка десктопного меню. Добавим этому элементу классы, по которым будем отключать на мобильной и планшетной ширине-->
                     <li class="main__list-item">
                         <div class ="main__list-text">
                             <a>
                                 <h2>
-                                    3D PRINTING ENTIRE ROCKETS
+                                    3D-ПЕЧАТЬ ЦЕЛЫХ РАКЕТ
                                 </h2>
                                 <h3>
-                                    TO BUILD THE FUTURE OF HUMANITY IN SPACE
+                                    ПОСТРОИТЬ БУДУЩЕЕ ЧЕЛОВЕЧЕСТВА В КОСМОСЕ
                                 </h3>
                                 <p>
-                                    Relativity is building the first autonomous rocket factory and launch services for satellites.
-                                    We are disrupting 60 years of aerospace.
+                                    Relativity строит первый автономный ракетный завод и запускает спутники.
+                                </p>
+                                <p>
+                                    Мы разрушаем 60 лет аэрокосмической отрасли.
                                 </p>
                                 <ul>
                                     <li class="margin_markers">
-                                        Reliability: 100x Fewer Parts
+                                        Надежность: в 100 раз меньше деталей
                                     </li>
                                     <li class="margin_markers">
-                                        Speed: 10x Faster Production Time
+                                        Скорость: в 10 раз быстрее время производства
                                     </li>
                                     <li class="margin_markers">
-                                        Flexibility: No Fixed Tooling and a Simple Supply Chain
+                                        Гибкость: отсутствие фиксированных инструментов и простая цепочка поставок
                                     </li>
                                     <li class="margin_markers">
-                                        Optimization: Compounding Iteration Quality and Time Improvements
+                                        Оптимизация: сочетание улучшений качества и времени итераций
                                     </li>
                                 </ul>
                             </a>
@@ -111,38 +105,38 @@
                     </li> 
                     <li class="main__list-item"> <!--пункт списка-->
                         <a class="main__list-image main__list-image-position">
-                            <img href="" src="./images/home/home__image-2.jpg" alt="home__image-2">
+                            <img href="" src="../images/home/home__image-2.jpg" alt="home__image-2">
                         </a> 
                     </li> 
                     <li class="main__list-item">
                         <a class="main__list-image">
-                            <img href="" src="./images/home/home__image-3.jpg" alt="home__image-3">
+                            <img href="" src="../images/home/home__image-3.jpg" alt="home__image-3">
                         </a>
                     </li> 
                     <li class="main__list-item">
                         <div class ="main__list-text">
                             <a>
                                 <h2>
-                                    3D PRINTING ENTIRE ENGINES
+                                    3D-ПЕЧАТЬ ЦЕЛЫХ ДВИГАТЕЛЕЙ
                                 </h2>
                                 <h3>
-                                    FROM RAW MATERIAL TO FLIGHT IN 60 DAYS
+                                    ОТ СЫРЬЯ ДО ПОЛЕТА ЗА 60 ДНЕЙ
                                 </h3>
                                 <p>
-                                    Terran 1 is the only medium payload launch vehicle engineered to adapt to the changing needs of satellite operators.
+                                    Terran 1 — единственная ракета-носитель средней полезной нагрузки, спроектированная с учетом меняющихся потребностей спутниковых операторов.
                                 </p>
                                 <ul>
                                     <li class="margin_markers">
-                                        Launching up to 1,250 kg to Low Earth Orbit
+                                        Запуск до 1250 кг на низкую околоземную орбиту
                                     </li>
                                     <li class="margin_markers">
-                                        Best-in-class payload fairing volume
+                                        Лучший в своем классе объем обтекателя полезной нагрузки
                                     </li>
                                     <li class="margin_markers">
-                                        100x fewer parts than traditional rockets
+                                        В 100 раз меньше деталей, чем в традиционных ракетах
                                     </li>
                                     <li class="margin_markers">
-                                        Entirely designed, built and flown in the United States
+                                        Полностью спроектирован, построен и запущен в США
                                     </li>
                                 </ul>
                             </a>
@@ -152,13 +146,13 @@
                         <div class ="main__list-text">
                             <a>
                                 <h2>
-                                    THE AEROSPACE FACTORY OF THE FUTURE, NOW
+                                    АЭРОКОСМИЧЕСКИЙ ЗАВОД БУДУЩЕГО СЕЙЧАС
                                 </h2>
                                 <h3>
-                                    BUILDING HUMANITY’S MULTIPLANETARY FUTURE
+                                    ПОСТРОЕНИЕ МНОГОПЛАНЕТНОГО БУДУЩЕГО ДЛЯ ЧЕЛОВЕЧЕСТВА
                                 </h3>
                                 <p>
-                                    Starting with rockets, our Stargate factory vertically integrates robotics, software, and patented 3D printing technologies to digitize manufacturing. Our proprietary process optimizes every aspect of aerospace development and enables faster, more frequent, and lower cost access to space.
+                                    Начиная с ракет, наша фабрика Stargate вертикально интегрирует робототехнику, программное обеспечение и запатентованные технологии 3D-печати для оцифровки производства. Наш запатентованный процесс оптимизирует каждый аспект аэрокосмической разработки и обеспечивает более быстрый, частый и недорогой доступ в космос.
                                 </p>
                                 <!-- <ul>
                                     <li>
@@ -179,31 +173,37 @@
                     </li> 
                     <li class="main__list-item">
                         <a class="main__list-image">
-                            <img href="" src="./images/home/home__image-4.jpg" alt="home__image-4">
+                            <img href="" src="../images/home/home__image-4.jpg" alt="home__image-4">
                         </a>
                     </li> 
                     <li class="main__list-item"> <!--пункт списка-->
                         <a class="main__list-image main__list-image-position">
-                            <img href="" src="./images/home/home__image-5.jpg" height="700px" alt="home__image-5">
+                            <img href="" src="../images/home/home__image-5.jpg" height="700px" alt="home__image-5">
                         </a> 
                     </li> 
                     <li class="main__list-item">
                         <div class ="main__list-text">
                             <a>
                                 <h2>
-                                    The First 3D Printed Rocket
+                                    Первая ракета, 
+                                </h2>
+                                <h2>
+                                    которая напечатана 
+                                </h2>
+                                <h2>
+                                    на 3D принтере
                                 </h2>
                                 <h3>
-                                    Terran 1 – the world's first 3D-printed rocket
+                                  Терран 1 - первая в мире напечатаная на 3D принтере ракета
                                 </h3>
                                 <p>
-                                    Terran 1 on March 22, 2023, became the first methane fueled rocket in the West to reach space, well over the 100km Karman Line. Terran 1 also became the first nearly entirely 3D printed rocket to fly and prove 3D printing is viable by successfully passing Max-Q, main engine cut-off (MECO) and second stage separation – marking several historic milestones not just for the aerospace industry, but for humanity. 
+                                    22 марта 2023 года Terran 1 стала первой на Западе ракетой, работающей на метане, которая достигла космоса, преодолев 100-километровую линию Кармана. Terran 1 также стала первой почти полностью распечатанной на 3D-принтере ракетой и доказала, что 3D-печать жизнеспособна, успешно пройдя тест Max-Q, отключение главного двигателя (MECO) и отделение второй ступени, отметив несколько исторических вех не только для аэрокосмической отрасли. а для человечества.
                                 </p>
                                 <p>
-                                    As a two-stage, 110ft. tall, 7.5 ft. wide, expendable rocket, Terran 1 is the largest 3D printed object to exist and to attempt orbital flight. Working towards its goal of being 95% 3D printed, Relativity’s first Terran 1 vehicle is 85% 3D printed by mass. Terran 1 has nine Aeon engines on its first stage, and one Aeon Vac on its second stage.
+                                    В качестве двухступенчатого, 110 футов. Высокая, 7,5 футов в ширину, одноразовая ракета, Terran 1 является крупнейшим напечатанным на 3D-принтере объектом, который существует и пытается совершить орбитальный полет. Стремясь к своей цели — 95% 3D-печати, первое транспортное средство Relativity Terran 1 на 85% состоит из 3D-печати по массе. Terran 1 имеет девять двигателей Aeon на первой ступени и один Aeon Vac на второй ступени.
                                 </p>
                                 <p>
-                                    Like its structure, all Relativity engines are 3D printed, and use liquid oxygen (LOX) and liquid natural gas (LNG), which are not only the best for rocket propulsion, but also for reusability, and the easiest to eventually transition to methane on Mars.
+                                    Как и его структура, все двигатели Relativity напечатаны на 3D-принтере и используют жидкий кислород (LOX) и сжиженный природный газ (LNG), которые не только лучше всего подходят для ракетных двигателей, но также и для повторного использования, и проще всего в конечном итоге на Марсе перейти на метан.
                                 </p>
                                 <!-- <ul>
                                     <li>
@@ -226,97 +226,83 @@
                         <div class ="main__list-text">
                             <a>
                                 <h2>
-                                    MISSION OVERVIEW
+                                    ОБЗОР МИССИИ
                                 </h2>
                                 <p>
-                                    Terran 1 Flight Article 
+                                    Статья о полете Terran 1 
                                 </p>
                                 <ul>
                                     <li class="margin_markers">
-                                        Height: 33.5 m / 110 ft
+                                        Высота: 33,5 м / 110 футов
+
+
                                     </li>
                                     <li class="margin_markers">
-                                        Diameter: 2.28 m / 7.5 ft
+                                        Диаметр: 2,28 м / 7,5 футов
                                     </li>
                                     <li class="margin_markers">
-                                        Mass (Dry): 9,280 kg / 20,458 lb 
+                                        Масса: 9 280 кг / 20 458 фунтов
                                     </li>
                                 </ul>   
                                 <p>
-                                    Aeon Engines 
+                                    Двигатели Aeon 
                                 </p>
                                 <ul>
-                                    <li class="margin_markers">
-                                        Propellant: LOX / LNG 
+                                    <li class="margin_markers"> 
+                                        Топливо: LOX / LNG 
                                     </li>
                                     <li class="margin_markers">
-                                        Thrust (Sea Level): 100,000 N / 23,000 lbf per engine
+                                        Тяга (над уровнем моря): 100 000 Н / 23 000 фунтов силы на двигатель
                                     </li>
                                     <li class="margin_markers">
-                                        Thrust (Vac): 113,000 N / 25,400 lbf 
+                                        Тяга (в ваккуме): 113 000 Н / 25 400 фунтов силы
                                     </li>
                                 </ul>
                                 <p>
-                                    Target Performance Capability 
+                                    Целевая производительность
                                 </p>
                                 <ul>
                                     <li class="margin_markers">
-                                        Payload: 1,250 kg / 2756 lbs to LEO
+                                        Полезная нагрузка: 1250 кг / 2756 фунтов на НОО
                                     </li>
                                     <li class="margin_markers">
-                                        Altitude: 500 km / 310 mi
+                                        Высота: 500 км / 310 миль 
                                     </li>
                                 </ul>                      
                                 <li class="main__list-item" style="display: flex;/*! align-content: center; */justify-content: center;">
                                     <video data-preserve-html-node="true" preload="auto" autoplay="" loop="" muted="" height="700">
-                                        <source data-preserve-html-node="true" type="video/mp4" src="./videos/home/home__video-1.mp4">
+                                        <source data-preserve-html-node="true" type="video/mp4" src="../videos/home/home__video-1.mp4">
                                     </video>
-                                    <img data-preserve-html-node="true" src="./images/home/home__image-6.png" style="height:700px;display:inline;">
+                                    <img data-preserve-html-node="true" src="../images/home/home__image-6.png" style="height:700px;display:inline;">
                                 </li>
                             </a>
                         </div> 
                     </li> 
                 </ul>
-                <div class="conteiner">
-                    <!-- <h1>
-                        calculate price
-                    </h1>
-                    <form action="" method="post">
-                        <input type="text" class="form-control" name="login" id="login" placeholder="enter login">
-                        <input type="text" class="form-control" name="name" id="name" placeholder="enter name">
-                        <button>
-                            registration
-                        </button>
-                    </form> -->
-                    <button>
-                        <a href="./php/register.php">registration</a>
-                    </button>
-                </div>
-                
 			</main>
         </div>
         <footer class="home__footer">
             <div class="footer__logo"> 
-                <a href="index.html">
-                    <img src="./images/Relativity_White_RGB_900px.png" width = "300px" alt="Relativity Space Logo">
+                <a href="../html/index_home_ru.php">
+                    <img src="../images/Relativity_White_RGB_900px.png" width = "300px" alt="Relativity Space Logo">
                 </a>
             </div>
             <div class="footer__menu">
                 <ul class="footer__menu-list none_markers"> <!--открывающий тег списка десктопного меню. Добавим этому элементу классы, по которым будем отключать на мобильной и планшетной ширине-->
                     <li class="footer__menu-item">
-                        <a href="./html/index_rockets_en.html">Rockets</a>
+                        <a href="../html/index_rockets_ru.html">Ракеты</a>
                     </li> 
                     <li class="footer__menu-item">
-                        <a href="./html/index_engines_en.html">Engines</a>
+                        <a href="../html/index_engines_ru.html">Двигатели</a>
                     </li> 
                     <li class="footer__menu-item">
-                        <a href="./html/index_factory_en.html">Factory</a>
+                        <a href="../html/index_factory_ru.html">Производство</a>
                     </li> 
                     <li class="footer__menu-item">
-                        <a href="./html/index_infrastructure_en.html">Infrastructure</a>
+                        <a href="../html/index_infrastructure_ru.html">Инфраструктура</a>
                     </li> 
                     <li class="footer__menu-item"> <!--пункт списка-->
-                        <a href="./html/index_projects_en.html">Projects</a> <!--ссылка, пустая, поэтому ставим "#". Также здесь и дальше по проекту будем в текстах после предлогов, между цифрами и связанными с ними словами и в других местах, в которых текст не должен переноситься, ставить вместо пробела символ неразрывного пробела - "&nbsp;"-->
+                        <a href="../html/index_projects_ru.html">Проекты</a> <!--ссылка, пустая, поэтому ставим "#". Также здесь и дальше по проекту будем в текстах после предлогов, между цифрами и связанными с ними словами и в других местах, в которых текст не должен переноситься, ставить вместо пробела символ неразрывного пробела - "&nbsp;"-->
                     </li> 
                 </ul>
             </div>
@@ -358,10 +344,51 @@
                 </ul>
                 <ul class="footer__motto-list none_markers">
                     <li class="footer__motto-item">
-                        <a href="./html/index_projects_en.html">Building Humanity's Multiplanetary Future</a>
+                        <a href="../html/index_projects_ru.html">Создание многопланетного будущего для человечества</a>
                     </li>
                 </ul>
             </div>
+            <?php
+            $connection= mysqli_connect("relativity","root","7064");
+            $db = mysqli_select_db($connection, 'relativity');
+            
+            if(isset($_POST['register']))
+            {
+                $first_name=$_POST['first_name'];
+                $last_name=$_POST['last_name'];
+                $company=$_POST['company'];
+                $job_title=$_POST['job_title'];
+                $email=$_POST['email'];
+                $phone_number=$_POST['phone_number'];
+
+
+
+                $query_1_2 = "INSERT INTO `first_name`(`first_name`) VALUES ('$first_name')";
+                $query_run_1_2 = mysqli_query($connection,$query_1_2);
+                $query_2_2 = "INSERT INTO `last_name`(`last_name`) VALUES ('$last_name')";
+                $query_run_2_2 = mysqli_query($connection,$query_2_2);
+                $query_3_2 = "INSERT INTO `company`(`company`) VALUES ('$company')";
+                $query_run_3_2 = mysqli_query($connection,$query_3_2);
+                $query_4_2 = "INSERT INTO `job_title`(`job_title`) VALUES ('$job_title')";
+                $query_run_4_2 = mysqli_query($connection,$query_4_2);
+                $query_5_2 = "INSERT INTO `email`(`email`) VALUES ('$email')";
+                $query_run_5_2 = mysqli_query($connection,$query_5_2);
+                $query_6_2 = "INSERT INTO `phone_number`(`phone_number`) VALUES ('$phone_number')";
+                $query_run_6_2 = mysqli_query($connection,$query_6_2);
+            }
+            ?>
+            <?php
+            $connection= mysqli_connect("relativity","root","7064");
+            $db = mysqli_select_db($connection, 'relativity');
+            
+            if(isset($_POST['subscribe']))
+            {
+                $email=$_POST['email'];
+            
+                $query_1_3 = "INSERT INTO `email`(`email`) VALUES ('$email')";
+                $query_run_1_3 = mysqli_query($connection,$query_1_3); 
+            }
+            ?>
         </footer>
 	</body>
 </html>
